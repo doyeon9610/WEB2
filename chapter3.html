@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>form ex1</title>
+  </head>
+  <body>
+  <h1>폼 만들기 예제(label/file)</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/_4upG-03td8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <form action="http://localhost/method/php" method="post">
+    <br><p>
+      <label for="id_txt">text</label>:
+      <input id="id_txt" type="text" name="id" value="입력하시오">
+    </p>
+    <p>
+      <label for="password">password:</label>
+      <input id="password" type="text" name="password" value="입력하시오">
+    </p>
+    <p><label>textarea:
+      <textarea id="comment" rows="2" cols="50">입력하세요</textarea>
+      </label>
+    </p>
+    <p>
+      <label>
+      <input type="checkbox" name="color" value="red">붉은색
+      </label>
+    </p>
+    <p>
+      <label for="color_blue">
+      <input id="color_blue" type="checkbox" name="color" value="blue">파란색
+      </label>
+    </p>
+  </form>
+  <form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="profile">
+    <input type="submit">
+  </form>
+  </body>
+</html>

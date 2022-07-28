@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>1.html grammer</title>
+  </head>
+  <body>
+    <h1><u>HTML GRAMMER</u></h1>
+    <h4>*tag/atrribute(꾸밈/속성)*</h4>
+    <p>
+    <b>[strong][/strong]</b> 진하게_강조
+    <br><b>[b][/b]</b> 진하게_표시
+    <br><b>[u][/u]</b> 밑줄(underline)
+    <br><b>[em][/em]</b> emphasis 이탤릭체_강조
+    <br><b>[i][/i]</b> italic 이탤릭체_표시
+    <br><b>[sub[/sub]</b> 아래첨자
+    <br><b>[sup][/sup]</b>위첨자
+  </p>
+  <p>
+    <b>[h1][/h1]~[h6][/h6]</b> 제목(heading) 큼~작음(내용의 구분)
+    <b><br>[br]</b> 줄바꿈
+    <b><br>[p][/p]</b> 단락(paragraph)
+    <b><br>[blockquote][/blockquote]</b> 인용문(들여씀)
+    <b><br>[img]</b> 이미지
+    <br>(이미지 파일 경로)
+    <b><br>+src="바다.jpg"</b> 같은 파일내
+    <b><br>+src="뻐꾸기/바다.jpg"</b> 하위폴더 내
+    <b><br>+alt="해변"</b> 이미지 대신 택스트표현(부연설명X 보여줄화면/이미지에 적힌내용)
+    <b><br>+width="30%"</b> 너비<b>+height=""</b> 높이
+    <br>(px픽셀로 지정시숫자만/%브라우저 창 대비/둘중 하나설정시 나머지하나 자동계산됨)
+  </p>
+  <p>
+    (자식)
+    <b><br>[li][/li]</b> 목록(list)
+    <br>(부모)
+    <b><br>[ul][/ul]</b>-목록 그룹핑(unordered list)
+    <br>*순서X불릿(bullet)작은원/사각형
+    <b><br>[ol][/ol]</b>-목록 자동순서화(ordered list)
+    <b><br>+type="1"</b> 숫자
+    <b><br>type="a"</b> 영문 소문자
+    <b><br>type="A"</b> 영문 대문자
+    <b><br>type="I"</b> 로마숫자 대문자
+    <b><br>type="i"</b> 로마숫자 소문자
+  </p>
+  <p>
+    ?[dl][/dl] 설명목록(description list)
+    <br>[dt][/dt] 이름(단어명)
+    <br>[dd][/dd] 값(설명)
+  </p>
+  <p>
+    [title][/title] 제목표시줄
+    <br>[meta] 데이터에 대한 데이터
+    <br> +charset="utf-8"  utf-8로 문서 읽기
+    <br> (charactor 문자+set 규칙)
+  </p>
+  <p>
+    [body][/body]본문그룹핑
+    <br>[head][/head]본문설명하는것그룹핑
+    <br>[html][/html] 최고위태그
+    <br>[!doctype html] 이것은 html문서임
+  </p>
+  <p>
+    [a][/a] 링크 (정보의바다에정박anchor)
+    <br>  +href="htttps://~" 링크(hyper text) 참조 (reference)
+    <br>  +target="_blank" 새창으로 띄우기
+    <br>  +title="해방일지 클립" 툴팁생성(링크설명)
+  </p>
+  <p>
+    [tabel][/table] 표 만들기(최고위택)-부모
+    <br>+border="2"  선 굵기
+    <br>[caption][/caption] 표바로위 작은제목
+    <br>[colgroup][/colgroup]열 상태 묶음
+    <br>[col]  *스타일지정없는열도입력필수
+    <br>+ style="width:170px;"
+    <br>+ span="2" 2열 묶음
+  </p>
+  <p>
+    [thead][/thead] 제목
+    <br>[tbody][/tbody] 본문
+    <br>[tfoot][/tfoot] 요약
+    <br> * 내용구조화/각 스타일 적용/순서지정
+  </p>
+  <p>
+    -자식-
+    <br>[th][/th] 제목화: 선굵기/중앙정렬
+    <br>[tr][/tr] 같은 행(tabel row)
+    <br>[td][/td] 셀 내용(tabel data)
+    <br> + rowspan="2" 위아래 행 2개 합치기
+    <br> + colspan="2" 양옆 열 2개 합치기
+    <br> * 합쳐진 행/열은 td삭제
+  </p>
+  <p>
+    [form][/form]
+    <br>+ action="http://~~" 데이터 전송서버
+    <br>*URL의 경우 http://localhost.color.php/?id=sss&psd=1111&adress=seoul
+    <br>+ method="get" get이라는 전송방식(default)
+    <br>*get: URL을 통해 보내는 방식
+    <br>*post: 다른 방법으로 숨겨서 전송
+    <br>(form의 경우 거의 post/서버엔지니어의 권한)
+    <br>+ enctype="multipart/form-data"
+  </p>
+  <p>
+    [input] 입력창
+    <br>+type="text/password" 한줄 글자/보이지 않게 입력
+    <br>+type="submit" 제출 버튼 생성
+    <br>++value="전송" 전송으로 글자 변경
+    <br>+name="id" 값의 종류(구분)
+    <br>+value="입력하시오" 미리 지정된 텍스트
+    <br>[textarea]입력하시오[/textarea]여러줄박스
+    <br>+row="2"/ cols="50" 2글자높이 50글자길이
+  </p>
+  <p>
+    [select][/select]dropdown list(수량체크) 부모
+    <br> +name="color2"
+    <br> +multiple 다중선택(Ctrl키 누르면서 선택)
+    <br>[option]붉은색[/option]-자식
+    <br>+value="red" ULR에서 color2=red 같이 사용자에게 보여지는 값이 아닌 서버로 넘겨줄 값
+  </p>
+  <p>
+    [input type="radio"] 같은 name인 것끼리 묶여서 한개가 체크되면 나머지 하나는 해제됨
+    <br>+name="color"
+    <br>+value="red" 서버에 넘겨줄 값
+    <br>+checked 체크되어있도록함
+    <br>[input type="checkbox"]같은 name 끼리 묶이고 중복선택가능
+    <br>+name="size"
+    <br>+value="100"
+    <br>[input type=button]버튼생성(자바스크활용)
+    <br>[input type="reset"]이 코드가 들어가 있는 form의 모든 데이터 삭제 (초기화)
+  </p>
+  <p>
+    [input type="hidden"] ui없지만 서버에 값전송 하고 싶을때 사용
+    <br>+ name="hide" value="inimi"
+    <br>URL: ~hide=inimi
+  </p>
+  <p>
+    [label]~[/label]폼요소와 텍스트(label)가 묶임
+    <br>+[label for ="comment"]~[/label]
+    <br>폼안에 id="comment"
+    <br>comment인 폼과 라벨택안의 ~가 묶임
+  </p>
+  <p>
+    [input type="file"] 파일 업로드
+    <br>+ name="~"
+    <br>+form action="파일업로드 할 서버주소"
+  </p>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>form ex2</title>
+  </head>
+  <body>
+    <h1>폼 만들기 예재(radio&checkbox)</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LYFOUIDBIp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><p>
+      <form action="http://localhost/order.php">
+      <h2>색상</h2>
+      붉은색: <input type="radio" name="color" value="red">
+      검은색: <input type="radio" name="color" value="black" checked>
+      파란색: <input type="radio" name="color" value="blue">
+    </p>
+    <p>
+      <h2>사이즈(다중선택)</h2>
+      95: <input type="checkbox" name="size" value="95">
+      100: <input type="checkbox" name="size" value="100" checked>
+      105: <input type="checkbox" name="size" value="105" checked>
+    </p>
+    <p>
+      <input type="submit">
+    </p>
+    <p>
+      </form>
+      <form action="http://localhost/form.php">
+      <input type="submit" value="전송">
+      <input type="button" value="버튼">
+      <input type="reset">
+      </form>
+    </p>
+    <p>
+      <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://my-web1-3.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+  </body>
+</html>

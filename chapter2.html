@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabel example</title>
+  </head>
+  <body>
+    <audio src="audio/신나는노래.mp3" autoplay controls loop></audio>
+    <h1>표 만들기 예제1,2</h1>
+  <br><p>
+    <h2>수습 국원 지원 양식</h2>
+    <table border="1">
+      <caption>표1</caption>
+      <colgroup>
+        <col style="width:100px;">
+        <col style="width:120px;">
+        <col style="width:200px;">
+      </colgroup>
+      <tr>
+        <th rowspan="3">개인정보</th>
+        <th>이름</th>
+        <td>   </td>
+      </tr>
+      <tr>
+        <th>학과/학번</th>
+        <td> </td>
+      </tr>
+      <tr>
+        <th>연락처</th>
+        <td> </td>
+      </tr>
+      <tr>
+        <th>지원분야</th>
+        <td colspan="2"> </td>
+      </tr>
+    </table>
+  </p>
+  <br><p>
+    <h2>먹거리</h2>
+    <table border="1">
+    <caption>표2</caption>
+    <colgroup>
+      <col style="width:150px;">
+      <col span="2" style="width:170px;"
+    </colgroup>
+    <thead>
+    <tr>
+      <th>일정</th>
+      <th>시간</th>
+      <th>장소</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>입춘 천냥 국수</th>
+        <td>11:00 ~ 16:00</td>
+        <td>목관아 주차장</td>
+      </tr>
+      <tr>
+        <th>제주 향토 음식</th>
+        <td>10:30 ~ 17:00</td>
+        <td rowspan="3">관덕정 마당</td>
+      </tr>
+      <tr>
+        <th>입춘 주전부리</th>
+        <td>10:30 ~ 17:00</td>
+      </tr>
+      <tr>
+        <th>차 나눔</th>
+        <td>10:30 ~ 17:00</td>
+      </tr>
+    </tbody>
+    </table>
+  </p>
+  </body>
+</html>
